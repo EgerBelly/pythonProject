@@ -1,6 +1,4 @@
 import music
-
-
 def set_saves(accepts):
     file = open("save.txt", "r")
     for i in range(0, 4):
@@ -14,8 +12,6 @@ def set_saves(accepts):
             k += 1
     file.close()
     return accepts
-
-
 def set_new_save(difficult, level):
     file = open("save.txt", "r")
     data = file.readlines()
@@ -35,8 +31,6 @@ def set_new_save(difficult, level):
         k += 1
         file.write(difficult_line_saves + '\n')
     file.close()
-
-
 def set_zero_saves():
     file = open("save.txt", "w+")
     for i in range(4):
